@@ -1,0 +1,20 @@
+\section{Вади даних}
+
+Нехай ми маємо вибірку даних.
+
+Skin color matters: gender recognition error rate
+
+Amazon recruiting tool biased towards women
+
+Methods for Fixing Data Samples
+
+Fixing dataset, make equal amount of classes
+Remove parasite correlations
+Correctly treat special data types (integer vs categorical)
+Missing data phenomen
+What if there are no more data to fulfill dataset?
+
+
+Biased data, samples with missing data 2D and 3D objects and notions immersed to, for example, 5D space (RGB images) are much more complicated indeed
+Neural network as a function can get any value outside dataset
+

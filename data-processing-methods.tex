@@ -1,0 +1,48 @@
+\section{Базові методи роботи з даними}
+
+\subsection{Візуалізація даних}
+
+У 3D Python 
+% https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
+
+% PCA T-SNE для MNIST: https://towardsdatascience.com/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b
+\subsection{Зниження розмірності векторного простору}
+
+
+
+\subsection{Метод головних компонент}
+
+
+Метод головних компонент (англ. principal component analysis) це перетворення координат простору таким чином, що перша головна компонента, у якої найбільша дисперсія, переходить у першу координату, друга у другу і так далі.
+
+Нехай $X$ -- набір даних з $n$ елементів, кожен елемент це вектор з $\R^p$. Він може бути представлений у вигляді матриці, у якої у строках знаходяться елементи $x_i \in X, x_i = (x_{i1}, x_{i2}, \dots, x_{ip})$. Вхідні дані перетворені таким чином, що по кожному ствобчику матриці її середнє,  дорівнює нулю, тобто від кожної компоненти вектора відняли її середнє і $\sum x_i  = 0$.
+
+
+% Відшукується перша головна компонента як розв'язок задачі:
+% 
+% \begin{equation}
+%  a_1 = argmin ‖ a_1 ‖ = 1 ( \sum i = 1 m ‖ x i − a 1 ( a 1 , x i ) ‖ 2 ) {\displaystyle a_{1}={\underset {\Vert a_{1}\Vert =1}{\operatorname {argmin} }}\left(\sum _{i=1}^{m}\Vert x_{i}-a_{1}(a_{1},x_{i})\Vert ^{2}\right)} {\displaystyle a_{1}={\underset {\Vert a_{1}\Vert =1}{\operatorname {argmin} }}\left(\sum _{i=1}^{m}\Vert x_{i}-a_{1}(a_{1},x_{i})\Vert ^{2}\right)}.
+% \end{equation}
+% 
+% якщо розв'язок не єдиний, то вибирається один з них.
+% 
+% 
+% Mathematically, the transformation is defined by a set of p-dimensional vectors of weights or coefficients w ( k ) = ( w 1 , … , w p ) ( k ) {\displaystyle \mathbf {w} _{(k)}=(w_{1},\dots ,w_{p})_{(k)}} \mathbf {w} _{(k)}=(w_{1},\dots ,w_{p})_{(k)} that map each row vector x ( i ) {\displaystyle \mathbf {x} _{(i)}} \mathbf{x}_{(i)} of X to a new vector of principal component scores t ( i ) = ( t 1 , … , t l ) ( i ) {\displaystyle \mathbf {t} _{(i)}=(t_{1},\dots ,t_{l})_{(i)}} {\displaystyle \mathbf {t} _{(i)}=(t_{1},\dots ,t_{l})_{(i)}}, given by
+% 
+%     t k ( i ) = x ( i ) ⋅ w ( k ) f o r i = 1 , … , n k = 1 , … , l {\displaystyle {t_{k}}_{(i)}=\mathbf {x} _{(i)}\cdot \mathbf {w} _{(k)}\qquad \mathrm {for} \qquad i=1,\dots ,n\qquad k=1,\dots ,l} {\displaystyle {t_{k}}_{(i)}=\mathbf {x} _{(i)}\cdot \mathbf {w} _{(k)}\qquad \mathrm {for} \qquad i=1,\dots ,n\qquad k=1,\dots ,l}
+% 
+% in such a way that the individual variables t 1 , … , t l {\displaystyle t_{1},\dots ,t_{l}} {\displaystyle t_{1},\dots ,t_{l}} of t considered over the data set successively inherit the maximum possible variance from X, with each coefficient vector w constrained to be a unit vector (where l {\displaystyle l} l is usually selected to be less than p {\displaystyle p} p to reduce dimensionality). 
+
+Приклади. Модуль PCА у Python
+
+Автоенкодери
+
+\subsection{Визначення залежностей}
+
+Регресія
+Логістична регресія
+
+\subsection{Кластеризація даних}
+
+Метод К-середніх
+

@@ -1,0 +1,8 @@
+*.backup
+*.aux
+*.bbl
+*.toc
+*.blg
+*.log
+*.out
+
