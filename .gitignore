@@ -6,4 +6,6 @@
 *.log
 *.out
 KompMat.xlsx
+*doc
+student-emails.csv
 

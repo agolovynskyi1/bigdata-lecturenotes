@@ -1,5 +1,14 @@
 \section{Нейронні мережі}
 
+Типи нейронних мереж за задачею
+
+\begin{itemize}
+ \item класифікатор;
+ \item генератор; 
+ \item TODO.
+\end{itemize}
+
+
 \subsection{Персептрон}
 
 У 1943 році Воррен Маккалох і Волтер Піттс у статті «Логічне числення ідей, що стосуються нервової активності» запропонували поняття штучної нейронної мережі. Зокрема, ними було запропоновано модель штучного нейрону. Дональд Гебб в роботі «Організація поведінки» 1949 року описав основні принципи навчання нейронів. 
@@ -16,3 +25,42 @@
 
 
 Приклад: Cifar 10 \url{https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html}
+
+
+\subsection{Конволюційні шари}
+
+Приклад. Mnist
+
+Приклад. Модернізація розумного замка: розпізнавання характерного звуку. Якщо немає, клас ``чого прийшов'', якщо є ``заходь, друже''. Для побудови потрібен датасет звуків природи або міських.
+
+Приклад. Визначення треків руху покупця у супермаркеті за відео з камер спостереження. Спрощений приклад: знаходження героїв у мультфільмі. 
+
+
+
+\subsubsection{MaxPooling}
+
+Max pooling operation for spatial data.
+
+Input (batchsize, rows, cols, channels) 
+
+Output (batchsize, pooledrows, pooledcols, channels)
+
+\subsubsection{BatchNormalization}
+
+Normalize the activations of the previous layer at each batch, i.e. applies a transformation that maintains the mean activation close to 0 and the activation standard deviation close to 1.
+
+
+\subsection{Автоенкодер}
+
+Формування вкладення (embedding)
+
+https://blog.keras.io/building-autoencoders-in-keras.html
+
+Зниження розмірності датасета.
+
+Приклад. Перетворення текста у картинку.
+
+
+
+\subsection{Рекурентні шари}
+
